@@ -77,6 +77,9 @@ public class Illustration {
   @SerializedName("is_muted")
   private Boolean muted = null;
 
+  @SerializedName("illust_ai_type")
+  private Integer illustAiType = null;
+
   /**
    * Get id
    *
@@ -381,6 +384,13 @@ public class Illustration {
     this.muted = muted;
   }
 
+  public Integer getIllustAiType() {
+    return illustAiType;
+  }
+
+  public void setIllustAiType(Integer illustAiType) {
+    this.illustAiType = illustAiType;
+  }
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -413,7 +423,8 @@ public class Illustration {
         Objects.equals(this.totalBookmarks, illustration.totalBookmarks) &&
         Objects.equals(this.bookmarked, illustration.bookmarked) &&
         Objects.equals(this.visible, illustration.visible) &&
-        Objects.equals(this.muted, illustration.muted);
+        Objects.equals(this.muted, illustration.muted) &&
+        Objects.equals(this.illustAiType, illustration.illustAiType);
   }
 
   @Override
@@ -440,7 +451,8 @@ public class Illustration {
         totalBookmarks,
         bookmarked,
         visible,
-        muted);
+        muted,
+        illustAiType);
   }
 
 
