@@ -201,17 +201,6 @@
           <snapshots><enabled>true</enabled></snapshots>
         </repository>
       </repositories>
-      <dependencies>
-        <dependency>
-          <groupId>org.slf4j</groupId>
-          <artifactId>slf4j-simple</artifactId>
-          <version>1.7.30</version>
-          <scope>compile</scope>
-        </dependency>
-      </dependencies>
-      <properties>
-        <org.slf4j.simpleLogger.defaultLogLevel>debug</org.slf4j.simpleLogger.defaultLogLevel>
-      </properties>
     </profile>
     <profile>
       <id>release</id>
